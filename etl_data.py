@@ -122,7 +122,7 @@ def import_to_mysql(output):
     .option("dbtable", "events") \
     .mode("append") \
     .option("user", "root") \
-    .option("password", "lito1105") \
+    .option("password", "...") \
     .save()
     return print('Data imported successfully')
 
@@ -131,7 +131,7 @@ def main_task(mysql_time):
     port = '3306'
     db_name = 'test_db'
     user = 'root'
-    password = '123456'
+    password = '...'
     url = 'jdbc:mysql://' + host + ':' + port + '/' + db_name
     driver = "com.mysql.cj.jdbc.Driver"
     print('The host is ' ,host)
@@ -189,7 +189,7 @@ host = 'localhost'
 port = '3306'
 db_name = 'test_db'
 user = 'root'
-password = 'lito1105'
+password = '...'
 url = 'jdbc:mysql://' + host + ':' + port + '/' + db_name
 driver = "com.mysql.cj.jdbc.Driver"
 
